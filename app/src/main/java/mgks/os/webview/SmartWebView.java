@@ -12,14 +12,14 @@ class SmartWebView {
 
 	/* -- PERMISSION VARIABLES -- */
 	static boolean ASWP_JSCRIPT       = true;         // enable JavaScript for webview
-	static boolean ASWP_FUPLOAD       = true;         // upload file from webview
-	static boolean ASWP_CAMUPLOAD     = true;         // enable upload from camera for photos
+	static boolean ASWP_FUPLOAD       = false; //true;         // upload file from webview
+	static boolean ASWP_CAMUPLOAD     = false; //true;         // enable upload from camera for photos
 	static boolean ASWP_ONLYCAM       = false;        // incase you want only camera files to upload
-	static boolean ASWP_MULFILE       = true;         // upload multiple files in webview
-	static boolean ASWP_LOCATION      = true;         // track GPS locations
+	static boolean ASWP_MULFILE       = false; //true;         // upload multiple files in webview
+	static boolean ASWP_LOCATION      = false; //true;         // track GPS locations
 	static boolean ASWP_CP			  = false;		  // enable copy/paste within webview
 
-	static boolean ASWP_RATINGS       = true;         // show ratings dialog; auto configured ; edit method get_rating() for customizations
+	static boolean ASWP_RATINGS       = false; //true;         // show ratings dialog; auto configured ; edit method get_rating() for customizations
 
 	static boolean ASWP_PULLFRESH     = true;         // pull refresh current url
 	static boolean ASWP_PBAR          = true;         // show progress bar in app
@@ -29,7 +29,7 @@ class SmartWebView {
 	static boolean ASWP_EXTURL        = true;         // open external url with default browser instead of app webview
 
 	static boolean ASWP_TAB           = true;         // instead of default browser, open external URLs in chrome tab
-	static boolean ASWP_ADMOB         = true;         // to load admob or not
+	static boolean ASWP_ADMOB         = false; //true;         // to load admob or not
 
 	static boolean ASWP_EXITDIAL	  = true;		  // confirm to exit app on back press
 
@@ -42,7 +42,7 @@ class SmartWebView {
 	static int ASWV_LAYOUT            = 0;            // default=0; for clear fullscreen layout, and =1 for drawer layout
 
 	// URL configs
-	static String ASWV_URL            = "file:///android_asset/offline.html";     // complete URL of your website or offline webpage
+	static String ASWV_URL            = "http://m.octo.co.kr"; //"file:///android_asset/offline.html";     // complete URL of your website or offline webpage
 	static String ASWV_SEARCH         = "https://www.google.com/search?q=";       // search query will start by the end of the present string
 	static String ASWV_SHARE_URL      = ASWV_URL + "?share=";                     // URL where you process external content shared with the app
 
